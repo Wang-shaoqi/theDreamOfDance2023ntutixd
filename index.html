@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=0.8">
+    <title>《舞動人心-The Dream Of Dance》</title>
+    <link href="favicon.ico" rel="shortcut icon" />
+    <link href="favicon.ico" rel="bookmark" />
+    <!-- Bootstrap -->
+    <link href="css/bootstrap-4.4.1.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/index.css"><!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="js/popper.min.js"></script>
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap-4.4.1.js"></script>
+    <script src="js/index.js"></script>
+  </head>
+  <body class="ft-d">
+    
+<!--    開頭-->
+    <header>
+       <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top py-2">
+         <div class="container">
+            <a class="navbar-brand" href="#">
+              <img src="img/logo.png" width="150" alt="">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav ml-auto">
+                <li class="nav-item pr-4"><a class="mynav-link" href="#about">世界觀介紹</a></li>
+                <li class="nav-item pr-4"><a class="mynav-link" href="#vid">遊戲宣傳片</a></li>
+                <li class="nav-item pr-4"><a class="mynav-link" href="#idea">使用元素及設計理念</a></li>
+                <li class="nav-item pr-4"><a class="mynav-link" href="#effect">從眾效應</a></li>
+                <li class="nav-item pr-4"><a class="mynav-link" href="#prolifo">遊戲物件&amp;場景介紹</a></li>
+                <li class="nav-item"><a class="mynav-link" href="#info">相關資訊</a></li>
+              </ul>
+            </div>
+         </div>
+      </nav>
+      <div id="start" class="position-relative">
+       
+        <div class="h-title p-1">
+          <img id="logo" src="img/logo.png" width="100%" alt="">
+          <a id="start_btn" class="mynav-link" href="#about">click to start</a>
+        </div>
+        <div class="carousel-inner min-vh-100">
+          <div class="bgm carousel-item active min-vh-100" style="background-image: url('img/start.png')">
+          </div>
+        </div>
+      </div>
+    </header>
+    
+   
+    
+    
+    
+    <button class="btn p-1" id="totop" >
+      <img src="img/totop.svg" alt="" style="filter: hue-rotate(70deg)">
+    </button>
+   
+    
+      <!-- Modal -->
+    <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalCenterTitle">今日活動</h5>
+            <button id="schedule_modal_btn" type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+          <div class="img-rect">
+            <img class="img"  src="img/Green3.jpg" alt="">
+          </div>
+          <p><strong>2021/11/01 - 12/30 | 市立北投圖書館綠建築參觀講解活動 | </strong></p>
+          <div class="img-rect">
+            <img class="img"  src="img/green10.jpg" alt="">
+          </div>
+          <p><strong>2021/12/01 - 02/30 | 生態親子講座 | </strong></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <input type="checkbox" name="" id="side-menu-switch">
+    <div id="schedule" class="text-center shadow p-5">
+      <h2 class="main mb-5 mt-4">行事曆</h2>
+      <h6 class="scintext mb-5">111 | 9 | 12 <br>期初討論開始</h6>
+      <h6 class="scintext mb-5">111 | 11 | 07 <br>期中報告評圖</h6>
+      <h6 class="scintext mb-5">112 | 1 | 15 <br>佈展準備</h6>
+      <h6 class="scintext">112 | 1 | 16 <br>期末專題展演-先鋒大樓303教室</h6>
+      <label for="side-menu-switch" class="shadow d-md-inline-block d-none">
+        schedule
+      </label>
+    </div>
+    
+  <!--    A+A--->
+<!--
+		<div id="idbtn">
+			<button id="ibtn" onClick="incr()">A+</button>
+			<button id="dbtn" onClick="decr()">A-</button>
+		</div>
+-->
+    
+    
+    
+<!--    世界觀介紹-->
+    <div id="carouselExampleControls" class="carousel slide position-relative" data-ride="carousel">
+        <div class="container h-title">
+          <div id="about" class="row align-items-center align-content-center justify-content-center px-md-5 px-4 text-white" style="min-height: 65vh;">
+            <div class="line line-b line-b1"></div>
+            <div class="line line-b line-b2"></div>
+            <h2 class="col-12 text-center main mb-0">《世界觀介紹》</h2>
+            <p class="col-12 text-center font-italic ft-ming minor mb-1">-PREFACE-</p>
+            <p class="text-center ">這是一個由洞穴構成的舞蹈精靈世界，居住著各種生物及精靈<br>其中，所有精靈由一個統治者所統治。<br>有一天，一位精靈出現在這世上，奇怪的是，他不記得自己是誰，身處哪裡。<br>於是，他決定開始踏上找尋自我的旅程。
+            </p>
+            <div class="col-8 mt-1">
+              <a id="about_btn" class="mynav-link" href="#vid">continue</a>
+            </div>
+            <div class="line line-a line-a1"></div>
+            <div class="line line-a line-a2"></div>
+          </div>
+        </div>
+       
+        <div class="carousel-inner min-vh-100">
+          <div class="bgm carousel-item active min-vh-100" style="background-image: url('img/about-1.png')">
+          </div>
+          <div class="bgm carousel-item min-vh-100" style="background-image: url('img/about-2.png')">
+          </div>
+          <div class="bgm carousel-item min-vh-100" style="background-image: url('img/about-3.png')">
+          </div>
+          <div class="bgm carousel-item min-vh-100" style="background-image: url('img/about-4.png')">
+          </div>
+        </div>
+      </div>
+    
+    
+    
+
+    <div class="container-fluid mt-5">
+    	<div class="row align-items-center align-content-center justify-content-center">
+			<h2 class="col-12 text-center mb-0 main">《遊戲宣傳片》</h2>
+			<h3 class="col-12 text-center mb-3 font-italic ft-ming minor">-GAME PUBLICITY-</h3>
+			<video id="vid" class="col-md-8 col-12" controls>
+				<source src="vid/game_vid.mp4#t=0.9" type="video/mp4">
+			</video>
+			<a href="https://www.youtube.com/watch?v=b4SiaD4bbm0" class="col-md-8 col-12 text-right mt-2 text-decoration-none ft-l">影片網址： https://www.youtube.com/watch?v=b4SiaD4bbm0</a>
+		</div>
+    </div>
+		
+		
+		
+		
+		
+		
+		
+    
+<!--   專題理念及設計內容-->
+    
+    <style>
+    #img3,#img4{
+        position: absolute;
+        z-index: -1;
+       
+      }
+      #img3{
+        left:5%;
+        bottom:-10%;
+        height: 40vmin;
+        z-index: -1;
+      }
+      #img4{
+        right:5%;
+        top:10%;
+        height: 50vmin;
+        z-index: 100;
+      }
+      #img5{
+        height: 50vmin;
+        right:0;
+        bottom:0%;
+        animation:qbird 3s linear infinite;
+        z-index: 100;
+      }
+      
+      #idea_btn{
+        color: #fff;
+        background-color: #00584e;
+        border: 2px solid rgba(255,255,255,.5);
+        padding: .5em 1em;
+        border-radius: 2em;
+        cursor: pointer;
+        opacity: .7;
+        z-index: 999;
+      }
+
+      #idea_btn:hover{
+        opacity:1;
+        transition: .3s;
+        text-decoration: none;
+      }
+    </style>
+    
+    <div class="position-relative">
+      <div class="container mb-5">
+        <div id="idea" class="row align-items-center justify-content-center mt-5">
+          <div class="col-md-9 col-12 p-5" color="#000;">
+            <h2 class="col-12 mb-3"><strong>四大元素及使用媒材</strong></h2>
+            <h5 class="col-12 mb-2">◆ 《We Must Go Deeper》</h5>
+            <h5 class="col-12 mb-2">◆ 展覽主題-夢裏</h5>
+            <h5 class="col-12 mb-2">◆ MotionCapture動作捕捉</h5>
+            <h5 class="col-12 mb-2">◆ 社會心理學-從眾效應</h5>
+            <h5 class="col-12 mb-2">◆ 互動遊戲(電腦/單機/2D卷軸)</h5>
+          </div>
+        </div>
+        <div class="row align-items-center justify-content-center">
+          <div class="col-md-9 col-12 p-5" color="#000;">
+            <h2 class="col-12 mb-3 text-right"><strong>專題理念 &amp; 設計內容</strong></h2>
+            <h5 class="col-12 mb-2 text-right">目標群衆：13-25嵗的青少年，大學生群體</h5>
+            <h5 class="col-12 mb-2 text-right">問題情景：我們時常在無意中被捲入從衆效應中，這次將探討在這個年齡段的校園生活中，遇到的從衆行爲，並以互動遊戲的方式，加入舞蹈元素豐富世界觀加以呈現</h5>
+            <h5 class="col-12 mb-2 text-right">專題理念：透過遊戲，讓玩家學會獨立思考，了解從眾的好壞，做出正確選擇，拒絕盲從</h5>
+            <div class="col-12 mt-5">
+              <a id="idea_btn" class="mynav-link" href="#effect">continue</a>
+            </div>
+          </div>
+          
+        </div>
+        
+      </div>
+      <img id="img3" src="img/creature1.gif" min-width="800px" alt="">
+      <img id="img4" src="img/creature2.gif" alt="">
+    </div>
+    
+    
+    
+    
+    
+
+    
+    <div id="effect" class="container-fluid section bg-l position-relative my-10"> 
+      <div class="row align-items-center align-content-center justify-content-center text-white py-5 mb-5 rounded m-auto position-relative" style="max-width: 1500px;">
+        <h2 class="col-md-8 col-10 text-center main p-md-5 p-3 mx-md-5 mx-3" style="">什麼是從眾效應?<br>(Bandwagon effect)</h2>
+       <div id="t-round">
+          <div class="cfff"></div>
+          <div class="cfff"></div>
+          <div class="cfff"></div>
+          <div class="cfff"></div>
+          <div class="cfff"></div>
+          <div class="cfff"></div>
+          <div class="cfff"></div>
+          <div class="cfff"></div>
+          <div class="cfff"></div>
+          <div class="cfff"></div>
+        </div>
+        <p class="col-md-8 col-10 text-center p-md-3 p-3 mx-md-2 mx-3">從眾效應又稱「羊群效應」<br>是指-思想或行動受多數人影響,導致跟從大眾的現象。人們傾向於改變自己的觀點或態度以適應群體,從而放棄/懷疑自己的標準和信念。</p>
+
+      </div>
+    </div>
+    
+    
+    
+
+    
+
+    <div class="my-5">
+      <div id="prolifo" class="container-fluid section">
+        <div id="icons" class="row align-items-center align-content-center justify-content-center py-5 mb-5 bg-l rounded" style="transition: 1s;">
+          <div id="i-text" class="col-12 text-center text-white mb-4 mr-3 main">《遊戲物件&amp;場景介紹》</div>
+          <img id="i1" src="img/i1.png" alt="" class="i col-md-2 col-3 mb-4">
+          <img id="i2" src="img/i2.png" alt="" class="i col-md-2 col-3 mb-4">
+          <img id="i3" src="img/i3.png" alt="" class="i col-md-2 col-3 mb-4">
+          <img id="i4" src="img/i4.png" alt="" class="i col-md-2 col-3 mb-4">
+        </div>     
+      </div>
+      <div class="container section">
+        <div id="pro-1" class="pro row align-items-center align-content-center justify-content-center my-md-4 my-4 p-3 rounded shadow bg-white">
+          <div class="col-md-6 col-12">
+            <img src="img/itemAll.gif" class="w-100 rounded" alt="">
+          </div>
+          <div class="col-md-6 col-12 text-md-left text-center mt-sm-0 mt-3 p-5">
+            <h3 class="main">關卡道具</h3>
+            <p>在玩家探索遊戲的過程中，可蒐集到不同的道具和線索，幫助關卡進行及通關</p>
+            <div class="col-12 p-0 ft-lg">
+              <span class="tag">#鑰匙</span><span class="tag">#吊墜</span><span class="tag">#破碎的報紙</span><span class="tag">#舊照片</span><span class="tag">#音樂盒</span><span class="tag">#殘餘的日記頁</span><span class="tag">#卡片</span>
+            </div>
+          </div>
+        </div>
+       
+        <div id="pro-2" class="pro d-none row align-items-center align-content-center justify-content-center my-md-4 my-4 p-3 rounded shadow bg-white">
+          <div class="col-md-6 col-12">
+            <img src="img/movement.gif" class="w-100 rounded" alt="">
+          </div>
+          <div class="col-md-6 col-12 text-md-left text-center mt-sm-0 mt-3 p-5">
+            <h3 class="main">玩家player主角(精靈)/敵人</h3>
+            <p class="mb-0">在遊戲中玩家可操縱主角探索各地(使用WASD移動及跳躍)</p>
+            <p>在各關卡中，會遇見被控制的敵人(黑色角色)，主角將遭遇追趕，玩家需操控主角躲避障礙物進行逃脫。</p>
+            <div class="col-12 p-0 ft-lg">
+              <span class="tag">#使用WASD操作</span><span class="tag">#移動</span><span class="tag">#跳躍</span><span class="tag">#舞蹈動作</span>
+            </div>
+          </div>
+        </div>
+        <div id="pro-3" class="pro d-none row align-items-center align-content-center justify-content-center my-md-4 my-4 p-3 rounded shadow bg-white">
+          <div class="col-md-6 col-12">
+            <img src="img/creatureAll.gif" class="w-100 rounded" alt="">
+          </div>
+          <div class="col-md-6 col-12 text-md-left text-center mt-sm-0 mt-3 p-5">
+            <h3 class="main">生物介紹</h3>
+            <p>這個世界充滿了精靈和各種小生物，在玩家的探索過程中，他們會在一旁關注主角，並在需要時給予指引和幫助。</p>
+            <div class="col-12 p-0 ft-lg">
+              <span class="tag">#飛行生物</span><span class="tag">#花葉</span><span class="tag">#果實</span><span class="tag">#種子</span>
+            </div>
+          </div>
+        </div>
+        <div id="pro-4" class="pro d-none row align-items-center align-content-center justify-content-center my-md-4 my-4 p-3 rounded shadow bg-white">
+          <div class="col-md-6 col-12">
+            <img src="img/stageMap.gif" class="w-100 rounded" alt="">
+          </div>
+          <div class="col-md-6 col-12 text-md-left text-center mt-sm-0 mt-3 p-5">
+            <h3 class="main">關卡場景</h3>
+            <p>在各關皆會有不同的場景，場景色調、佈景反應著主角的不同階段的心靈狀態。</p>
+            <div class="col-12 p-0 ft-lg">
+              <span class="tag">#洞穴</span><span class="tag">#光明</span><span class="tag">#陰暗</span><span class="tag">#回憶</span><span class="tag">#壓力</span><span class="tag">#初心</span><span class="tag">#夢想</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+    
+	  
+	  <div class="container mt-3" style="max-width: 65vw;">
+	  	<div id="info" class="row align-items-center align-content-center justify-content-center mb-4">
+			<h2 class="col-12 text-center mb-0 main">《使用軟體》</h2>
+			<h3 class="col-12 text-center mb-3 font-italic ft-ming minor">-SOFTWARE-</h3>
+			<img src="img/software2.png" alt="" class="col-md-2 col-4 w-100 mb-md-0 mb-2">
+			<img src="img/software3.jpg" alt="" class="col-md-2 col-4 w-100 mb-md-0 mb-2">
+			<img src="img/software7.png" alt="" class="col-md-2 col-4 w-100 mb-md-0 mb-2">
+			<img src="img/software9.png" alt="" class="col-md-2 col-4 w-100 mb-md-0 mb-2">
+			<div class="col-md-12 col-0 mt-3 d-md-block d-none"></div>
+			<img src="img/software1.jpeg" alt="" class="col-md-2 col-4 w-100 mb-md-0 mb-2"> 
+			<img src="img/software4.png" alt="" class="col-md-2 col-4 w-100 mb-md-0 mb-2">
+			<img src="img/software5.png" alt="" class="col-md-2 col-4 w-100 mb-md-0 mb-2">
+			<img src="img/software6.jpg" alt="" class="col-md-2 col-4 w-100 mb-md-0 mb-2">
+			<img src="img/software8.jpg" alt="" class="col-md-2 col-4 w-100 mb-md-0 mb-2">
+	  	</div>
+	  </div>
+	  
+      <footer class="position-relative">
+        <div id="contact" class="container py-md-5 py-0" style="z-index: 5;">
+          <div class="row align-items-end justify-content-center p-md-5 px-2 py-5  bg-d" style="min-height: 200px;">
+            <div class="col-md-6 col-12 text-md-left text-center">
+              <p class="mb-3"><a href="" class="text-white">基本設計專題-第一組<br>《舞動人心-The Dream Of Dance》</a></p>
+              <p class="mb-0"><a href="" class="text-white">製作人員：臺北科技大學－互動設計科一年級生</a></p>
+              <p class="mb-3"><a href="" class="text-white">方萁萱、王劭祺、邱瑋柔、央志寰、蘇德倫</a></p>
+            </div>
+            <div class="col-md-6 col-12 text-md-right text-center">
+              <p class="mb-3"><a href="" class="text-white">&copy;Copyright_TheDreamOfDance_2023</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="ab-lb-0 w-100" style="z-index: -1; box-shadow: 0 0 15px rgba(14,1,1,.46);min-height: 150px;"></div>
+      </footer>
+
+ 
+    
+    <script>
+      $(".mynav-link").click(function(){
+        var targetId=$(this).attr("href");
+        var sectionTop=$(targetId).offset().top;
+        $("html,body").animate({
+          scrollTop:sectionTop-200
+        },500);
+      });
+      $("#totop").click(function(){
+        $("html,body").animate({
+          scrollTop:0
+        },500);
+      });
+      
+
+      
+      function fsi(e,d){
+        e.css("font-size",parseInt(e.css('font-size')) + d + "px");
+      };
+      function incr(){
+        fsi($("p"),5);
+        fsi($("h1"),5);
+        fsi($("h2"),5);
+        fsi($("h3"),7);
+        fsi($("h4"),5);
+        fsi($("h5"),5);
+        fsi($("h6"),5);
+        fsi($(".main"),8);
+        fsi($(".minor"),5);
+        fsi($(".fsay"),5);
+        fsi($(".psay"),5);
+        fsi($(".tag"),5);
+        fsi($(".display-4"),15);
+      };
+      function fsd(e,d){      
+        e.css("font-size",parseInt(e.css('font-size')) - d + "px");
+      };
+      function decr(){
+        fsd($("p"),5);
+        fsd($("h1"),5);
+        fsd($("h2"),5);
+        fsd($("h3"),7);
+        fsd($("h4"),5);
+        fsd($("h5"),5);
+        fsd($("h6"),5);
+        fsd($(".main"),8);
+        fsd($(".minor"),5);
+        fsd($(".fsay"),5);
+        fsd($(".psay"),5);
+        fsd($(".tag"),5);
+        fsd($(".display-4"),15);
+      };
+      
+      
+      var ec = true;
+      var w = false;
+      var en = false;
+      var h = false;
+
+      document.getElementById("i1").addEventListener("click",function(){
+        restI();
+        document.getElementById("pro-1").classList.remove("d-none");
+      }); 
+      document.getElementById("i2").addEventListener("click",function(){
+        restI();
+        document.getElementById("pro-2").classList.remove("d-none");
+       
+      }); 
+      document.getElementById("i3").addEventListener("click",function(){
+        restI();
+        document.getElementById("pro-3").classList.remove("d-none");
+        
+      }); 
+      document.getElementById("i4").addEventListener("click",function(){
+        restI();
+        document.getElementById("pro-4").classList.remove("d-none");
+        
+      }); 
+      var pro =  document.getElementsByClassName("pro");
+      function restI(){
+        for(var i = 0;i < pro.length;i++){
+          pro[i].classList.add("d-none");
+        };
+      };
+      
+      
+
+      
+      
+      
+    </script>
+    
+  </body>
+</html>

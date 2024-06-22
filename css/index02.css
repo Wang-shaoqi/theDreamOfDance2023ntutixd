@@ -1,0 +1,95 @@
+@charset "utf-8";
+/* CSS Document */
+
+*:not(.fade){
+  outline: none;
+  transition: .3s;
+}
+body{font-family: 微軟正黑體;}
+nav{z-index: 4;}
+nav-item a:hover{
+  color: #52001E;
+}
+.bg-d{background-color: #52001E;}
+.bg-l{background-color: #DD2166;}
+.ft-d{color: #52001E;}
+.ab-lb-0{position: absolute;bottom: 0;left: 0;}
+.my-10{margin-top: 10em;margin-bottom: 10em;}
+.tag{
+  background-color: #DD2166;
+  color: #fff;
+  padding: 8px;
+  border-radius: 0 8px 8px 8px;
+  margin-bottom: 5px;
+  margin-right: 5px;
+}
+.tag:hover{
+  background-color: #fff;
+  color: #DD2166;
+  border: 1px solid #DD2166;
+  padding: 7px;
+}
+
+
+.a-row{
+  box-shadow: 0 0 15px #DD2166;
+  position: relative;
+}
+.a-row:hover{
+  transform: scale(1.02);
+}
+.line{
+  position: relative;
+}
+.line-a,.line-b{
+  width: 100%;
+}
+.line-a::after,.line-b::before{
+  content: '';
+  width: 0;
+  height: 60px;
+  left: 50%;
+  border-left: 2px solid #52001E;
+  position: absolute;
+  transition: .5s;
+}
+.line-a:after{
+  top: -60px;
+}
+.a-row:hover .line-a1::after{
+  transform: rotate(90deg);
+  top: -120px;
+  height: 120px;
+}
+.a-row:hover .line-a2::after{
+  transform: rotate(-90deg);
+  top: -120px;
+  height: 120px;
+}
+.line-b{}
+.line-b:before{
+  top: 100px;
+}
+.a-row:hover .line-b1::before{
+  transform: rotate(90deg);
+  top: 60px;
+  height: 120px;
+}
+.a-row:hover .line-b2::before{
+  transform: rotate(-90deg);
+  top: 60px;
+  height: 120px;
+}
+
+#girl::after,#girl::before,.ft-box::after,.fsay::after,.psay::after{
+  content: '';
+  width: 0;
+  height: 0;
+  left: 0;
+  position: absolute;
+}
+
+.fsay{}
+.fsay::after{}
+.psay{}
+.psay::after{}
